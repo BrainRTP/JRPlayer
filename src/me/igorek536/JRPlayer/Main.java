@@ -73,10 +73,10 @@ public class Main {
                                 showLnMessage("ERR!");
                             }
                         } else {
-                            showLnMessage("No arg!");
+                            showLnMessage(Constants.PROG_ERROR_SELECT);
                         }
                     } catch (Exception e) {
-                        showLnMessage("Error in try!");
+                        showLnMessage(Constants.PROG_ERROR_SELECT);
                     }
                     sleep(500);
                     printCursor();

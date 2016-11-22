@@ -25,4 +25,5 @@ public class Constants {
     public static final String PROG_ERROR_COMAND = "Wrong command!";
     public static final String PROG_ERROR_JSON = "Error while parsing json!";
     public static final String PROG_ERROR_NOARG = "You enter no argument!";
+    public static final String PROG_ERROR_SELECT = "Something was wrong!";
 }
