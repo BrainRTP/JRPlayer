@@ -1,0 +1,124 @@
+{
+  "radiolist" : [
+    {
+      "Id" : "0",
+      "Name" : "Prosto Radio",
+      "URL" : "http://62.80.190.246:8000/ProstoRadiO128"
+    },
+    {
+      "Id" : "1",
+      "Name" : "Radio Ulitka",
+      "URL" : "http://air.radioulitka.ru:8000/ulitka_128"
+    },
+    {
+      "Id" : "2",
+      "Name" : "Radio Rocks",
+      "URL" : "http://online-radioroks.tavrmedia.ua/RadioROKS"
+    },
+    {
+      "Id" : "3",
+      "Name" : "Hit FM",
+      "URL" : "http://online-hitfm.tavrmedia.ua/HitFM"
+    },
+    {
+      "Id" : "4",
+      "Name" : "Russkoe Radio",
+      "URL" : "http://online-rusradio.tavrmedia.ua/RusRadio"
+    },
+    {
+      "Id" : "5",
+      "Name" : "Radio Shanson",
+      "URL" : "http://217.20.164.170:8002/"
+    },
+    {
+      "Id" : "6",
+      "Name" : "Radio Records",
+      "URL" : "http://air.radiorecord.ru:8101/rr_320"
+    },
+    {
+      "Id" : "7",
+      "Name" : "Radio Records GopFM",
+      "URL" : "http://air.radiorecord.ru:8102/gop_320"
+    },
+    {
+      "Id" : "8",
+      "Name" : "Radio Records YoFM",
+      "URL" : "http://air.radiorecord.ru:8102/yo_320"
+    },
+    {
+      "Id" : "9",
+      "Name" : "Radio Records Trap",
+      "URL" : "http://air.radiorecord.ru:8102/trap_320"
+    },
+    {
+      "Id" : "10",
+      "Name" : "Radio Records Diskoteka 90-h",
+      "URL" : "http://air.radiorecord.ru:8102/sd90_320"
+    },
+    {
+      "Id" : "11",
+      "Name" : "Radio Records Pirate Station",
+      "URL" : "http://air.radiorecord.ru:8102/ps_320"
+    },
+    {
+      "Id" : "12",
+      "Name" : "Radio Records ChillOut FM",
+      "URL" : "http://air.radiorecord.ru:8102/chil_320"
+    },
+    {
+      "Id" : "13",
+      "Name" : "Nashe Radio",
+      "URL" : "http://cast.radiogroup.com.ua:8000/nashe"
+    },
+    {
+      "Id" : "14",
+      "Name" : "Europa Plus",
+      "URL" : "http://cast.radiogroup.com.ua:8000/europaplus"
+    },
+    {
+      "Id" : "15",
+      "Name" : "Avto Radio",
+      "URL" : "http://cast.radiogroup.com.ua:8000/avtoradio"
+    },
+    {
+      "Id" : "16",
+      "Name" : "Zaycev FM",
+      "URL" : "http://radio.zaycev.fm:9002/ZaycevFM(256)"
+    },
+    {
+      "Id" : "17",
+      "Name" : "DJFM",
+      "URL" : "http://r.ezbt.me:80/djfm-ukraine"
+    },
+    {
+      "Id" : "18",
+      "Name" : "Radio Storm",
+      "URL" : "http://radio.russkoe.fm:8000/mp3_rushtorm"
+    },
+    {
+      "Id" : "19",
+      "Name" : "Radio Son",
+      "URL" : "http://www.radioson.ru:8009/amsterdam-trance-radio.mp3"
+    },
+    {
+      "Id" : "20",
+      "Name" : "Best FM",
+      "URL" : "http://radio.bestfm.fm:8080/bestfm"
+    },
+    {
+      "Id" : "21",
+      "Name" : "Retro FM",
+      "URL" : "http://cast.radiogroup.com.ua:8000/retro"
+    },
+    {
+      "Id" : "22",
+      "Name" : "Rock Melodic Radio",
+      "URL" : "http://37.59.14.77:8124/stream"
+    },
+    {
+      "Id" : "23",
+      "Name" : "LEDJAM",
+      "URL" : "http://ledjamradio.ice.infomaniak.ch/ledjamradio.mp3"
+    }
+  ]
+}
