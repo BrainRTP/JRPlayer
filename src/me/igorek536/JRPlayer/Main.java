@@ -12,7 +12,7 @@ import static me.igorek536.JRPlayer.Core.BaseUtils.*;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        showLnMessage(Constants.PROG_LAUNCHED + getDate());
+        showLnMessage(Constants.PROG_LAUNCHED + getDatestart());
         showLnMessage(Constants.PROG_TYPE_HELP);
         genFile(0);
         printCursor();
@@ -23,43 +23,49 @@ public class Main {
             switch (arg[0]) {
                 case "stop": {
                     stop();
-                    sleep(500);
+                    sleep(100);
                     printCursor();
                     break;
                 }
                 case "play": {
                     play();
-                    sleep(500);
+                    sleep(100);
                     printCursor();
                     break;
                 }
                 case "exit": {
                     exit();
-                    sleep(500);
+                    sleep(100);
                     printCursor();
                     break;
                 }
                 case "replay": {
                     restart();
-                    sleep(500);
+                    sleep(100);
                     printCursor();
                     break;
                 }
                 case "status": {
                     status();
-                    sleep(500);
+                    sleep(100);
+                    printCursor();
+                    break;
+                }
+                case "help": {
+                    help();
+                    sleep(100);
                     printCursor();
                     break;
                 }
                 case "list": {
                     printJson();
-                    sleep(500);
+                    sleep(100);
                     printCursor();
                     break;
                 }
                 case "genfile": {
                     genFile(1);
-                    sleep(500);
+                    sleep(100);
                     printCursor();
                     break;
                 }
@@ -68,7 +74,7 @@ public class Main {
                         if (isStringInt(arg[1])) {
                             if ((getId(arg[1]))) {
                                 GlobalVars.ID = arg[1];
-                                showLnMessage("OK!");
+                                showLnMessage("\033[32mOK!\033[0m");
                             } else {
                                 showLnMessage("ERR!");
                             }
@@ -78,7 +84,7 @@ public class Main {
                     } catch (Exception e) {
                         showLnMessage(Constants.PROG_ERROR_SELECT);
                     }
-                    sleep(500);
+                    sleep(100);
                     printCursor();
                     break;
                 }
@@ -89,6 +95,6 @@ public class Main {
         }
     }
     private static void printCursor() {
-        showMessage("[" + getDate() + "]" + " >_ ");
+        showMessage("\033[0m[" + getDate() + "\033[0m]" + " >_ ");
     }
 }
