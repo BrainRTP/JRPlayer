@@ -1,6 +1,4 @@
 # JRPlayer
-![Image alt](https://github.com/BrainRTP/JRPlayer/JRPlayer.png)
-![ScreenShot](https://raw.githubusercontent.com/i-saumitra/Voice-controlled-MP3-Player/master/screenshot.jpg)
 Высокопроизводительная консольная программа для проигрывания онлайн-радио. 
 В комплекте 24 радиостанции. Вы можете легко/удалять радиостанции при помощи простого редактирования файла list.json
 Структура файла list.json:
