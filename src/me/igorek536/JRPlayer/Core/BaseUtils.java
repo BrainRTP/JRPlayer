@@ -31,6 +31,11 @@ public class BaseUtils {
 
     public static String getDate() {
         Date date = new Date();
+        SimpleDateFormat format1 = new SimpleDateFormat("hh:mm:ss");
+        return format1.format(date);
+    }
+    public static String getDatestart() {
+        Date date = new Date();
         SimpleDateFormat format1 = new SimpleDateFormat("dd.MM.yyyy hh:mm:ss");
         return format1.format(date);
     }
@@ -152,7 +157,7 @@ public class BaseUtils {
             Object obj = parser.parse(new FileReader(System.getProperty("user.dir") + "/" + Constants.PROG_FILELIST_NAME));
             JSONObject jsonObject = (JSONObject) obj;
             JSONArray radiolist = (JSONArray) jsonObject.get("radiolist");
-            showLnMessage("  Id" + "      " + "Name" + "                                " + "URL");
+            showLnMessage("  \033[32mId" + "      " + "Name" + "                                " + "URL\033[32m");
             showLnMessage("=============================================================================================");
             int i = 0;
             String[][] arr = new String[radiolist.size()][3];
@@ -161,15 +166,28 @@ public class BaseUtils {
                 String name = (String) slide.get("Name");
                 String url = (String) slide.get("URL");
                 String id = (String) slide.get("Id");
-                arr[i][0] = id;
-                arr[i][1] = name;
-                arr[i][2] = url;
+                arr[i][0] = id + "\033[0m";
+                arr[i][1] = "\033[34m" + name + "\033[0m";
+                arr[i][2] = "\033[37m" + url + "\033[0m";
                 i++;
             }
             printFormat(arr, radiolist.size());
-            showLnMessage("=============================================================================================");
+            showLnMessage("\033[32m=============================================================================================\033[0m");
         } catch (IOException | ParseException ignored) {
         }
+    }
+    public static void help(){
+        showLnMessage("\033[0m================================== Помощь ==================================\033[0m");
+        showLnMessage("\033[31mlist\033[0m - Список радиостанций");
+        showLnMessage("\033[31mhelp\033[0m - Помощь");
+        showLnMessage("\033[31mselect [ID]\033[0m - Выбрать радиостанцию");
+        showLnMessage("\033[31mplay\033[0m - Воспроизвести выбранную радиостанцию");
+        showLnMessage("\033[31mstop\033[0m - Остановить воспроизведение радиостанции");
+        showLnMessage("\033[31mstatus\033[0m - Посмотреть статус радио");
+        showLnMessage("\033[31mreplay\033[0m - Перезапустить радиостанцию");
+        showLnMessage("\033[31mexit\033[0m - Выход");
+        showLnMessage("Что бы послушать радио выбери радиостанцию '\033[31mselect [id]\033[0m' и пропиши '\033[31mplay\033[0m'");
+        showLnMessage("\033[0m=============================================================================\033[0m");
     }
 
     private static void printFormat(String[][] s, int size) {
@@ -197,7 +215,7 @@ public class BaseUtils {
             }
         }
         for(int i=0; i<size; i++){
-            showLnMessage("# " + s[i][0] + "      " + s[i][1] + "        " + s[i][2]);
+            showLnMessage("\033[31m# " + s[i][0] + "      " + s[i][1] + "        " + s[i][2]);
         }
     }
 
