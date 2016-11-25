@@ -66,6 +66,8 @@ public class BaseUtils {
                 if (getId(GlobalVars.ID)) {
                     playerThread = new PlayerThread();
                     playerThread.start();
+                    showMessage(Constants.PROG_PLAYER_PLAY);
+                    showMessage(getJson(1).get(GlobalVars.ID)+ "\n");
                 } else {
                     showLnMessage("No Global var found!");
                 }
